@@ -9,7 +9,7 @@ import (
 	"encoding/json"
 	"testing"
 
-	"github.com/btcsuite/btcd/btcjson"
+	"github.com/devwarrior777/xzcd/btcjson"
 )
 
 // TestChainSvrWsResults ensures any results that have custom marshalling

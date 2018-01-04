@@ -10,9 +10,9 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/btcsuite/btcd/database"
 	"github.com/btcsuite/btclog"
-	flags "github.com/jessevdk/go-flags"
+	flags "github.com/btcsuite/go-flags"
+	"github.com/devwarrior777/xzcd/database"
 )
 
 const (
