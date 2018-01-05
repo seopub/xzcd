@@ -11,7 +11,7 @@ import (
 	"github.com/devwarrior777/xzcd/btcec"
 	"github.com/devwarrior777/xzcd/chaincfg"
 	"github.com/devwarrior777/xzcd/wire"
-	"github.com/devwarrior777/xzcutil"
+	xzcutil "github.com/devwarrior777/xzcutil"
 )
 
 // RawTxInWitnessSignature returns the serialized ECDA signature for the input
