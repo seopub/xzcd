@@ -12,8 +12,8 @@ import (
 	"strings"
 	"time"
 
-	flags "github.com/btcsuite/go-flags"
 	xzcutil "github.com/devwarrior777/xzcutil"
+	flags "github.com/jessevdk/go-flags"
 )
 
 type config struct {

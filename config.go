@@ -20,7 +20,6 @@ import (
 	"strings"
 	"time"
 
-	flags "github.com/btcsuite/go-flags"
 	"github.com/btcsuite/go-socks/socks"
 	"github.com/devwarrior777/xzcd/blockchain"
 	"github.com/devwarrior777/xzcd/chaincfg"
@@ -30,6 +29,7 @@ import (
 	_ "github.com/devwarrior777/xzcd/database/ffldb"
 	"github.com/devwarrior777/xzcd/mempool"
 	xzcutil "github.com/devwarrior777/xzcutil"
+	flags "github.com/jessevdk/go-flags"
 )
 
 const (
