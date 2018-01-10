@@ -630,8 +630,11 @@ func ExtractPkScriptAddrs(pkScript []byte, chainParams *chaincfg.Params) (Script
 type AtomicSwapDataPushes struct {
 	RecipientHash160 [20]byte
 	RefundHash160    [20]byte
-	SecretHash       [32]byte
-	LockTime         int64
+	//gf:future->
+	// SecretHash       [32]byte
+	SecretHash [20]byte
+	//<-gf
+	LockTime int64
 }
 
 // ExtractAtomicSwapDataPushes returns the data pushes from an atomic swap

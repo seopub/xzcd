@@ -65,7 +65,7 @@ const (
 )
 
 var (
-	defaultHomeDir     = xzcutil.AppDataDir("btcd", false)
+	defaultHomeDir     = xzcutil.AppDataDir("xzcd", false)
 	defaultConfigFile  = filepath.Join(defaultHomeDir, defaultConfigFilename)
 	defaultDataDir     = filepath.Join(defaultHomeDir, defaultDataDirname)
 	knownDbTypes       = database.SupportedDrivers()

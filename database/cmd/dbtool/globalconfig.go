@@ -10,21 +10,21 @@ import (
 	"os"
 	"path/filepath"
 
-	xzcutil "github.com/btcsuite/xzcutil"
 	"github.com/devwarrior777/xzcd/chaincfg"
 	"github.com/devwarrior777/xzcd/database"
 	_ "github.com/devwarrior777/xzcd/database/ffldb"
 	"github.com/devwarrior777/xzcd/wire"
+	xzcutil "github.com/devwarrior777/xzcutil"
 )
 
 var (
-	btcdHomeDir     = xzcutil.AppDataDir("btcd", false)
+	xzcdHomeDir     = xzcutil.AppDataDir("xzccd", false)
 	knownDbTypes    = database.SupportedDrivers()
 	activeNetParams = &chaincfg.MainNetParams
 
 	// Default global config.
 	cfg = &config{
-		DataDir: filepath.Join(btcdHomeDir, "data"),
+		DataDir: filepath.Join(xzcdHomeDir, "data"),
 		DbType:  "ffldb",
 	}
 )
@@ -60,7 +60,7 @@ func validDbType(dbType string) bool {
 }
 
 // netName returns the name used when referring to a bitcoin network.  At the
-// time of writing, btcd currently places blocks for testnet version 3 in the
+// time of writing, xzcd currently places blocks for testnet version 3 in the
 // data and log directory "testnet", which does not match the Name field of the
 // chaincfg parameters.  This function can be used to override this directory name
 // as "testnet" when the passed active network matches wire.TestNet3.
