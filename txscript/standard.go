@@ -10,8 +10,7 @@ import (
 	"github.com/devwarrior777/xzcd/chaincfg"
 	"github.com/devwarrior777/xzcd/wire"
 	xzcutil "github.com/devwarrior777/xzcutil"
-
-	"github.com/davecgh/go-spew/spew"
+	// "github.com/davecgh/go-spew/spew"
 )
 
 const (
@@ -658,7 +657,7 @@ func ExtractAtomicSwapDataPushes(pkScript []byte) (*AtomicSwapDataPushes, error)
 		return nil, nil
 	}
 
-	spew.Dump(pops)
+	// spew.Dump(pops)
 
 	isAtomicSwap := pops[0].opcode.value == OP_IF &&
 		//gf:future->
