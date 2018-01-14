@@ -15,9 +15,9 @@ import (
 	"runtime/debug"
 	"runtime/pprof"
 
-	"github.com/devwarrior777/xzcd/blockchain/indexers"
-	"github.com/devwarrior777/xzcd/database"
-	"github.com/devwarrior777/xzcd/limits"
+	"github.com/zcoinofficial/xzcd/blockchain/indexers"
+	"github.com/zcoinofficial/xzcd/database"
+	"github.com/zcoinofficial/xzcd/limits"
 )
 
 const (

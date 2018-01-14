@@ -8,10 +8,10 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/devwarrior777/xzcd/blockchain"
-	"github.com/devwarrior777/xzcd/txscript"
-	"github.com/devwarrior777/xzcd/wire"
-	"github.com/devwarrior777/xzcutil"
+	"github.com/zcoinofficial/xzcd/blockchain"
+	"github.com/zcoinofficial/xzcd/txscript"
+	"github.com/zcoinofficial/xzcd/wire"
+	"github.com/zcoinofficial/xzcutil"
 )
 
 const (

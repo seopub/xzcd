@@ -13,10 +13,10 @@ import (
 	"time"
 
 	"github.com/btcsuite/go-socks/socks"
-	"github.com/devwarrior777/xzcd/chaincfg"
-	"github.com/devwarrior777/xzcd/chaincfg/chainhash"
-	"github.com/devwarrior777/xzcd/peer"
-	"github.com/devwarrior777/xzcd/wire"
+	"github.com/zcoinofficial/xzcd/chaincfg"
+	"github.com/zcoinofficial/xzcd/chaincfg/chainhash"
+	"github.com/zcoinofficial/xzcd/peer"
+	"github.com/zcoinofficial/xzcd/wire"
 )
 
 // conn mocks a network connection by implementing the net.Conn interface.  It

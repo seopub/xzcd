@@ -9,7 +9,7 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/devwarrior777/xzcd/chaincfg/chainhash"
+	"github.com/zcoinofficial/xzcd/chaincfg/chainhash"
 )
 
 // defaultTransactionAlloc is the default size used for the backing array

@@ -9,9 +9,9 @@ import (
 	"net"
 	"time"
 
-	"github.com/devwarrior777/xzcd/chaincfg"
-	"github.com/devwarrior777/xzcd/peer"
-	"github.com/devwarrior777/xzcd/wire"
+	"github.com/zcoinofficial/xzcd/chaincfg"
+	"github.com/zcoinofficial/xzcd/peer"
+	"github.com/zcoinofficial/xzcd/wire"
 )
 
 // mockRemotePeer creates a basic inbound peer listening on the simnet port for

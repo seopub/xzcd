@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/devwarrior777/xzcd/chaincfg/chainhash"
+	"github.com/zcoinofficial/xzcd/chaincfg/chainhash"
 )
 
 // MaxBlockLocatorsPerMsg is the maximum number of block locator hashes allowed

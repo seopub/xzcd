@@ -11,7 +11,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/devwarrior777/xzcd/btcjson"
+	"github.com/zcoinofficial/xzcd/btcjson"
 )
 
 // TestWalletSvrCmds tests all of the wallet server commands marshal and

@@ -11,9 +11,9 @@ import (
 	"encoding/binary"
 	"errors"
 
-	"github.com/devwarrior777/xzcd/blockchain"
-	"github.com/devwarrior777/xzcd/database"
-	xzcutil "github.com/devwarrior777/xzcutil"
+	"github.com/zcoinofficial/xzcd/blockchain"
+	"github.com/zcoinofficial/xzcd/database"
+	xzcutil "github.com/zcoinofficial/xzcutil"
 )
 
 var (

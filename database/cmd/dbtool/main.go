@@ -11,7 +11,7 @@ import (
 	"strings"
 
 	"github.com/btcsuite/btclog"
-	"github.com/devwarrior777/xzcd/database"
+	"github.com/zcoinofficial/xzcd/database"
 	flags "github.com/jessevdk/go-flags"
 )
 

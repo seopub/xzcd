@@ -10,8 +10,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/devwarrior777/xzcd/chaincfg/chainhash"
-	"github.com/devwarrior777/xzcd/wire"
+	"github.com/zcoinofficial/xzcd/chaincfg/chainhash"
+	"github.com/zcoinofficial/xzcd/wire"
 )
 
 // Bip16Activation is the timestamp where BIP0016 is valid to use in the

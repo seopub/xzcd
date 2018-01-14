@@ -8,8 +8,8 @@ import (
 	"fmt"
 
 	"github.com/btcsuite/btclog"
-	"github.com/devwarrior777/xzcd/database"
-	"github.com/devwarrior777/xzcd/wire"
+	"github.com/zcoinofficial/xzcd/database"
+	"github.com/zcoinofficial/xzcd/wire"
 )
 
 var log = btclog.Disabled

@@ -9,8 +9,8 @@ import (
 	"errors"
 	"time"
 
-	"github.com/devwarrior777/xzcd/chaincfg/chainhash"
-	"github.com/devwarrior777/xzcd/database"
+	"github.com/zcoinofficial/xzcd/chaincfg/chainhash"
+	"github.com/zcoinofficial/xzcd/database"
 )
 
 // fetchBlockCmd defines the configuration options for the fetchblock command.

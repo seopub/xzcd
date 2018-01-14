@@ -9,7 +9,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/devwarrior777/xzcd/wire"
+	"github.com/zcoinofficial/xzcd/wire"
 )
 
 // TestParseOpcode tests for opcode parsing with bad data templates.

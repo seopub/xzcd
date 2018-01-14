@@ -7,8 +7,8 @@ package blockchain
 import (
 	"fmt"
 
-	"github.com/devwarrior777/xzcd/database"
-	xzcutil "github.com/devwarrior777/xzcutil"
+	"github.com/zcoinofficial/xzcd/database"
+	xzcutil "github.com/zcoinofficial/xzcutil"
 )
 
 // maybeAcceptBlock potentially accepts a block into the block chain and, if

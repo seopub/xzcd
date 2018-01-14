@@ -10,7 +10,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/devwarrior777/xzcd/wire"
+	"github.com/zcoinofficial/xzcd/wire"
 )
 
 // testNoncePrng provides a deterministic prng for the nonce in generated fake

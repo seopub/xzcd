@@ -8,7 +8,7 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/devwarrior777/xzcd/chaincfg/chainhash"
+	"github.com/zcoinofficial/xzcd/chaincfg/chainhash"
 )
 
 var (

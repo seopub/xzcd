@@ -7,7 +7,7 @@ package main
 import (
 	"log"
 
-	"github.com/devwarrior777/xzcd/rpcclient"
+	"github.com/zcoinofficial/xzcd/rpcclient"
 )
 
 func main() {

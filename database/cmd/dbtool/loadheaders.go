@@ -7,8 +7,8 @@ package main
 import (
 	"time"
 
-	"github.com/devwarrior777/xzcd/chaincfg/chainhash"
-	"github.com/devwarrior777/xzcd/database"
+	"github.com/zcoinofficial/xzcd/chaincfg/chainhash"
+	"github.com/zcoinofficial/xzcd/database"
 )
 
 // headersCmd defines the configuration options for the loadheaders command.

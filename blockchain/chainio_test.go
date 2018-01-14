@@ -11,9 +11,9 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/devwarrior777/xzcd/chaincfg/chainhash"
-	"github.com/devwarrior777/xzcd/database"
-	"github.com/devwarrior777/xzcd/wire"
+	"github.com/zcoinofficial/xzcd/chaincfg/chainhash"
+	"github.com/zcoinofficial/xzcd/database"
+	"github.com/zcoinofficial/xzcd/wire"
 )
 
 // TestErrNotInMainChain ensures the functions related to errNotInMainChain work

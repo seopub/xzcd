@@ -8,7 +8,7 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/devwarrior777/xzcd/database"
+	"github.com/zcoinofficial/xzcd/database"
 )
 
 // TestErrorCodeStringer tests the stringized output for the ErrorCode type.

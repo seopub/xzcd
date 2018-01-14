@@ -7,8 +7,8 @@ package blockchain
 import (
 	"fmt"
 
-	"github.com/devwarrior777/xzcd/txscript"
-	xzcutil "github.com/devwarrior777/xzcutil"
+	"github.com/zcoinofficial/xzcd/txscript"
+	xzcutil "github.com/zcoinofficial/xzcutil"
 )
 
 const (

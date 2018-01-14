@@ -17,7 +17,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/devwarrior777/xzcd/btcec"
+	"github.com/zcoinofficial/xzcd/btcec"
 )
 
 func main() {

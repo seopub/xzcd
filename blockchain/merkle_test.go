@@ -7,7 +7,7 @@ package blockchain
 import (
 	"testing"
 
-	xzcutil "github.com/devwarrior777/xzcutil"
+	xzcutil "github.com/zcoinofficial/xzcutil"
 )
 
 // TestMerkle tests the BuildMerkleTreeStore API.

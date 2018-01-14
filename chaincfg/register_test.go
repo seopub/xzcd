@@ -6,7 +6,7 @@ import (
 	"strings"
 	"testing"
 
-	. "github.com/devwarrior777/xzcd/chaincfg"
+	. "github.com/zcoinofficial/xzcd/chaincfg"
 )
 
 // Define some of the required parameters for a user-registered

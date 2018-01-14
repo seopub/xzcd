@@ -7,10 +7,10 @@ package blockchain
 import (
 	"fmt"
 
-	"github.com/devwarrior777/xzcd/chaincfg/chainhash"
-	"github.com/devwarrior777/xzcd/database"
-	"github.com/devwarrior777/xzcd/txscript"
-	xzcutil "github.com/devwarrior777/xzcutil"
+	"github.com/zcoinofficial/xzcd/chaincfg/chainhash"
+	"github.com/zcoinofficial/xzcd/database"
+	"github.com/zcoinofficial/xzcd/txscript"
+	xzcutil "github.com/zcoinofficial/xzcutil"
 )
 
 // utxoOutput houses details about an individual unspent transaction output such

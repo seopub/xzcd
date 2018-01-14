@@ -8,8 +8,8 @@
 package database
 
 import (
-	"github.com/devwarrior777/xzcd/chaincfg/chainhash"
-	xzcutil "github.com/devwarrior777/xzcutil"
+	"github.com/zcoinofficial/xzcd/chaincfg/chainhash"
+	xzcutil "github.com/zcoinofficial/xzcutil"
 )
 
 // Cursor represents a cursor over key/value pairs and nested buckets of a

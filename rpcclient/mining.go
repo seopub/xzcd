@@ -9,9 +9,9 @@ import (
 	"encoding/json"
 	"errors"
 
-	"github.com/devwarrior777/xzcd/btcjson"
-	"github.com/devwarrior777/xzcd/chaincfg/chainhash"
-	xzcutil "github.com/devwarrior777/xzcutil"
+	"github.com/zcoinofficial/xzcd/btcjson"
+	"github.com/zcoinofficial/xzcd/chaincfg/chainhash"
+	xzcutil "github.com/zcoinofficial/xzcutil"
 )
 
 // FutureGenerateResult is a future promise to deliver the result of a

@@ -10,11 +10,11 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/devwarrior777/xzcd/blockchain"
-	"github.com/devwarrior777/xzcd/chaincfg"
-	"github.com/devwarrior777/xzcd/database"
-	_ "github.com/devwarrior777/xzcd/database/ffldb"
-	xzcutil "github.com/devwarrior777/xzcutil"
+	"github.com/zcoinofficial/xzcd/blockchain"
+	"github.com/zcoinofficial/xzcd/chaincfg"
+	"github.com/zcoinofficial/xzcd/database"
+	_ "github.com/zcoinofficial/xzcd/database/ffldb"
+	xzcutil "github.com/zcoinofficial/xzcutil"
 )
 
 // This example demonstrates how to create a new chain instance and use

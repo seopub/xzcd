@@ -5,9 +5,9 @@
 package mining
 
 import (
-	xzcutil "github.com/devwarrior777/xzcd/blockchain"
-	"github.com/devwarrior777/xzcd/wire"
-	"github.com/devwarrior777/xzcutil"
+	xzcutil "github.com/zcoinofficial/xzcd/blockchain"
+	"github.com/zcoinofficial/xzcd/wire"
+	"github.com/zcoinofficial/xzcutil"
 )
 
 const (
