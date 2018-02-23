@@ -1,4 +1,5 @@
 // Copyright (c) 2013-2017 The btcsuite developers
+// Copyright (c) 2013-2017 The zcoin developers
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -629,11 +630,9 @@ func ExtractPkScriptAddrs(pkScript []byte, chainParams *chaincfg.Params) (Script
 type AtomicSwapDataPushes struct {
 	RecipientHash160 [20]byte
 	RefundHash160    [20]byte
-	//gf:future->
-	// SecretHash       [32]byte
-	SecretHash [20]byte
-	//<-gf
-	LockTime int64
+	SecretHash       [32]byte
+	SecretSize       int64
+	LockTime         int64
 }
 
 // ExtractAtomicSwapDataPushes returns the data pushes from an atomic swap
@@ -641,9 +640,8 @@ type AtomicSwapDataPushes struct {
 // ExtractAtomicSwapDataPushes returns (nil, nil).  Non-nil errors are returned
 // for unparsable scripts.
 //
-// NOTE: Atomic swaps are not considered standard script types by the dcrd
-// mempool policy and should be used with P2SH.  The atomic swap format is also
-// expected to change to use a more secure hash function in the future.
+// NOTE: Atomic swaps are not considered standard script types by the dcrd, zcoind
+// mempool policy and should be used with P2SH.
 //
 // This function is only defined in the txscript package due to API limitations
 // which prevent callers using txscript to parse nonstandard scripts.
@@ -653,48 +651,55 @@ func ExtractAtomicSwapDataPushes(pkScript []byte) (*AtomicSwapDataPushes, error)
 		return nil, err
 	}
 
-	if len(pops) != 17 {
+	if len(pops) != 20 {
 		return nil, nil
 	}
-
-	// spew.Dump(pops)
-
 	isAtomicSwap := pops[0].opcode.value == OP_IF &&
-		//gf:future->
-		// pops[1].opcode.value == OP_SHA256 &&
-		// pops[2].opcode.value == OP_DATA_32 &&
-		pops[1].opcode.value == OP_RIPEMD160 &&
-		pops[2].opcode.value == OP_DATA_20 &&
-		//<-gf
+		pops[1].opcode.value == OP_SIZE &&
+		canonicalPush(pops[2]) &&
 		pops[3].opcode.value == OP_EQUALVERIFY &&
-		pops[4].opcode.value == OP_DUP &&
-		pops[5].opcode.value == OP_HASH160 &&
-		pops[6].opcode.value == OP_DATA_20 &&
-		pops[7].opcode.value == OP_ELSE &&
-		canonicalPush(pops[8]) &&
-		pops[9].opcode.value == OP_CHECKLOCKTIMEVERIFY &&
-		pops[10].opcode.value == OP_DROP &&
-		pops[11].opcode.value == OP_DUP &&
-		pops[12].opcode.value == OP_HASH160 &&
-		pops[13].opcode.value == OP_DATA_20 &&
-		pops[14].opcode.value == OP_ENDIF &&
-		pops[15].opcode.value == OP_EQUALVERIFY &&
-		pops[16].opcode.value == OP_CHECKSIG
+		pops[4].opcode.value == OP_SHA256 &&
+		pops[5].opcode.value == OP_DATA_32 &&
+		pops[6].opcode.value == OP_EQUALVERIFY &&
+		pops[7].opcode.value == OP_DUP &&
+		pops[8].opcode.value == OP_HASH160 &&
+		pops[9].opcode.value == OP_DATA_20 &&
+		pops[10].opcode.value == OP_ELSE &&
+		canonicalPush(pops[11]) &&
+		pops[12].opcode.value == OP_CHECKLOCKTIMEVERIFY &&
+		pops[13].opcode.value == OP_DROP &&
+		pops[14].opcode.value == OP_DUP &&
+		pops[15].opcode.value == OP_HASH160 &&
+		pops[16].opcode.value == OP_DATA_20 &&
+		pops[17].opcode.value == OP_ENDIF &&
+		pops[18].opcode.value == OP_EQUALVERIFY &&
+		pops[19].opcode.value == OP_CHECKSIG
 	if !isAtomicSwap {
 		return nil, nil
 	}
 
 	pushes := new(AtomicSwapDataPushes)
-	copy(pushes.SecretHash[:], pops[2].data)
-	copy(pushes.RecipientHash160[:], pops[6].data)
-	copy(pushes.RefundHash160[:], pops[13].data)
-	if pops[8].data != nil {
-		locktime, err := makeScriptNum(pops[8].data, true, 5)
+	copy(pushes.SecretHash[:], pops[5].data)
+	copy(pushes.RecipientHash160[:], pops[9].data)
+	copy(pushes.RefundHash160[:], pops[16].data)
+	if pops[2].data != nil {
+		secretsize, err := makeScriptNum(pops[2].data, true, 5)
+		if err != nil {
+			return nil, nil
+		}
+		pushes.SecretSize = int64(secretsize)
+	} else if op := pops[2].opcode; isSmallInt(op) {
+		pushes.SecretSize = int64(asSmallInt(op))
+	} else {
+		return nil, nil
+	}
+	if pops[11].data != nil {
+		locktime, err := makeScriptNum(pops[11].data, true, 5)
 		if err != nil {
 			return nil, nil
 		}
 		pushes.LockTime = int64(locktime)
-	} else if op := pops[8].opcode; isSmallInt(op) {
+	} else if op := pops[11].opcode; isSmallInt(op) {
 		pushes.LockTime = int64(asSmallInt(op))
 	} else {
 		return nil, nil
