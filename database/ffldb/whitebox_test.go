@@ -17,8 +17,8 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/seopub/btcsuite_goleveldb/leveldb"
-	ldberrors "github.com/seopub/btcsuite_goleveldb/leveldb/errors"
+	"github.com/seopub/btcsuite_goleveldb"
+	ldberrors "github.com/seopub/btcsuite_goleveldb"
 	"github.com/seopub/xzcd/chaincfg"
 	"github.com/seopub/xzcd/database"
 	"github.com/seopub/xzcd/wire"
