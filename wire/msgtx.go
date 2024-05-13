@@ -10,7 +10,7 @@ import (
 	"io"
 	"strconv"
 
-	"github.com/seopub/xzcd/chaincfg/chainhash"
+	"github.com/seopub/xzcd"
 )
 
 const (
