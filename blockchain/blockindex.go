@@ -10,10 +10,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/zcoinofficial/xzcd/chaincfg"
-	"github.com/zcoinofficial/xzcd/chaincfg/chainhash"
-	"github.com/zcoinofficial/xzcd/database"
-	"github.com/zcoinofficial/xzcd/wire"
+	"github.com/seopub/xzcd/chaincfg"
+	"github.com/seopub/xzcd/chaincfg/chainhash"
+	"github.com/seopub/xzcd/database"
+	"github.com/seopub/xzcd/wire"
 )
 
 // blockStatus is a bit field representing the validation state of the block.

@@ -12,7 +12,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/zcoinofficial/xzcd/btcjson"
+	"github.com/seopub/xzcd/btcjson"
 )
 
 // TestChainSvrWsNtfns tests all of the chain server websocket-specific

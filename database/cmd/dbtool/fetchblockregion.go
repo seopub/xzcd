@@ -10,8 +10,8 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/zcoinofficial/xzcd/chaincfg/chainhash"
-	"github.com/zcoinofficial/xzcd/database"
+	"github.com/seopub/xzcd/chaincfg/chainhash"
+	"github.com/seopub/xzcd/database"
 )
 
 // blockRegionCmd defines the configuration options for the fetchblockregion

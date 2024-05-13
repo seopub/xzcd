@@ -21,14 +21,14 @@ import (
 	"time"
 
 	"github.com/btcsuite/go-socks/socks"
-	"github.com/zcoinofficial/xzcd/blockchain"
-	"github.com/zcoinofficial/xzcd/chaincfg"
-	"github.com/zcoinofficial/xzcd/chaincfg/chainhash"
-	"github.com/zcoinofficial/xzcd/connmgr"
-	"github.com/zcoinofficial/xzcd/database"
-	_ "github.com/zcoinofficial/xzcd/database/ffldb"
-	"github.com/zcoinofficial/xzcd/mempool"
-	xzcutil "github.com/zcoinofficial/xzcutil"
+	"github.com/seopub/xzcd/blockchain"
+	"github.com/seopub/xzcd/chaincfg"
+	"github.com/seopub/xzcd/chaincfg/chainhash"
+	"github.com/seopub/xzcd/connmgr"
+	"github.com/seopub/xzcd/database"
+	_ "github.com/seopub/xzcd/database/ffldb"
+	"github.com/seopub/xzcd/mempool"
+	xzcutil "github.com/seopub/xzcutil"
 	flags "github.com/jessevdk/go-flags"
 )
 

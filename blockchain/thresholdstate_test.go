@@ -7,7 +7,7 @@ package blockchain
 import (
 	"testing"
 
-	"github.com/zcoinofficial/xzcd/chaincfg/chainhash"
+	"github.com/seopub/xzcd/chaincfg/chainhash"
 )
 
 // TestThresholdStateStringer tests the stringized output for the

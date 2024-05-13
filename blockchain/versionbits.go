@@ -7,7 +7,7 @@ package blockchain
 import (
 	"math"
 
-	"github.com/zcoinofficial/xzcd/chaincfg"
+	"github.com/seopub/xzcd/chaincfg"
 )
 
 const (

@@ -11,7 +11,7 @@ import (
 	"testing"
 
 	"github.com/davecgh/go-spew/spew"
-	"github.com/zcoinofficial/xzcd/chaincfg/chainhash"
+	"github.com/seopub/xzcd/chaincfg/chainhash"
 )
 
 // TestNotFound tests the MsgNotFound API.

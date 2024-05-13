@@ -8,10 +8,10 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/zcoinofficial/xzcd/chaincfg"
-	"github.com/zcoinofficial/xzcd/chaincfg/chainhash"
-	"github.com/zcoinofficial/xzcd/txscript"
-	xzcutil "github.com/zcoinofficial/xzcutil"
+	"github.com/seopub/xzcd/chaincfg"
+	"github.com/seopub/xzcd/chaincfg/chainhash"
+	"github.com/seopub/xzcd/txscript"
+	xzcutil "github.com/seopub/xzcutil"
 )
 
 // CheckpointConfirmations is the number of blocks before the end of the current

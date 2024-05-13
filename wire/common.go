@@ -12,7 +12,7 @@ import (
 	"math"
 	"time"
 
-	"github.com/zcoinofficial/xzcd/chaincfg/chainhash"
+	"github.com/seopub/xzcd/chaincfg/chainhash"
 )
 
 const (

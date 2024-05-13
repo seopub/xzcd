@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"net"
 
-	"github.com/zcoinofficial/xzcd/wire"
+	"github.com/seopub/xzcd/wire"
 )
 
 var (

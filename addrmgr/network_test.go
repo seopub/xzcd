@@ -8,8 +8,8 @@ import (
 	"net"
 	"testing"
 
-	"github.com/zcoinofficial/xzcd/addrmgr"
-	"github.com/zcoinofficial/xzcd/wire"
+	"github.com/seopub/xzcd/addrmgr"
+	"github.com/seopub/xzcd/wire"
 )
 
 // TestIPTypes ensures the various functions which determine the type of an IP

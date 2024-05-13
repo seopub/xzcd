@@ -12,7 +12,7 @@ import (
 	"strings"
 	"time"
 
-	xzcutil "github.com/zcoinofficial/xzcutil"
+	xzcutil "github.com/seopub/xzcutil"
 	flags "github.com/jessevdk/go-flags"
 )
 

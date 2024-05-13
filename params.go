@@ -5,8 +5,8 @@
 package main
 
 import (
-	"github.com/zcoinofficial/xzcd/chaincfg"
-	"github.com/zcoinofficial/xzcd/wire"
+	"github.com/seopub/xzcd/chaincfg"
+	"github.com/seopub/xzcd/wire"
 )
 
 // activeNetParams is a pointer to the parameters specific to the

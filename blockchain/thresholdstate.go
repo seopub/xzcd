@@ -7,7 +7,7 @@ package blockchain
 import (
 	"fmt"
 
-	"github.com/zcoinofficial/xzcd/chaincfg/chainhash"
+	"github.com/seopub/xzcd/chaincfg/chainhash"
 )
 
 // ThresholdState define the various threshold states used when voting on

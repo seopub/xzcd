@@ -14,8 +14,8 @@ import (
 	"runtime"
 	"time"
 
-	rpc "github.com/zcoinofficial/xzcd/rpcclient"
-	xzcutil "github.com/zcoinofficial/xzcutil"
+	rpc "github.com/seopub/xzcd/rpcclient"
+	xzcutil "github.com/seopub/xzcutil"
 )
 
 // nodeConfig contains all the args, and data required to launch a btcd process

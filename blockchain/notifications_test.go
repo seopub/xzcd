@@ -7,7 +7,7 @@ package blockchain
 import (
 	"testing"
 
-	"github.com/zcoinofficial/xzcd/chaincfg"
+	"github.com/seopub/xzcd/chaincfg"
 )
 
 // TestNotifications ensures that notification callbacks are fired on events.

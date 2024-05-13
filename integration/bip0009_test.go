@@ -13,10 +13,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/zcoinofficial/xzcd/blockchain"
-	"github.com/zcoinofficial/xzcd/chaincfg"
-	"github.com/zcoinofficial/xzcd/chaincfg/chainhash"
-	"github.com/zcoinofficial/xzcd/integration/rpctest"
+	"github.com/seopub/xzcd/blockchain"
+	"github.com/seopub/xzcd/chaincfg"
+	"github.com/seopub/xzcd/chaincfg/chainhash"
+	"github.com/seopub/xzcd/integration/rpctest"
 )
 
 const (

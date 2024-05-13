@@ -9,7 +9,7 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/zcoinofficial/xzcd/txscript"
+	"github.com/seopub/xzcd/txscript"
 )
 
 // TestCheckBlockScripts ensures that validating the all of the scripts in a

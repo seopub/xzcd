@@ -9,8 +9,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/zcoinofficial/xzcd/addrmgr"
-	"github.com/zcoinofficial/xzcd/wire"
+	"github.com/seopub/xzcd/addrmgr"
+	"github.com/seopub/xzcd/wire"
 )
 
 func TestChance(t *testing.T) {

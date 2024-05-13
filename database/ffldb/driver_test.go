@@ -12,10 +12,10 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/zcoinofficial/xzcd/chaincfg"
-	"github.com/zcoinofficial/xzcd/database"
-	"github.com/zcoinofficial/xzcd/database/ffldb"
-	xzcutil "github.com/zcoinofficial/xzcutil"
+	"github.com/seopub/xzcd/chaincfg"
+	"github.com/seopub/xzcd/database"
+	"github.com/seopub/xzcd/database/ffldb"
+	xzcutil "github.com/seopub/xzcutil"
 )
 
 // dbType is the database type name for this driver.

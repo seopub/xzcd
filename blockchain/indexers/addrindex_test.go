@@ -9,7 +9,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/zcoinofficial/xzcd/wire"
+	"github.com/seopub/xzcd/wire"
 )
 
 // addrIndexBucket provides a mock address index database bucket by implementing

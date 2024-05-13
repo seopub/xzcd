@@ -7,7 +7,7 @@ package blockchain
 import (
 	"testing"
 
-	"github.com/zcoinofficial/xzcutil"
+	"github.com/seopub/xzcutil"
 )
 
 // BenchmarkIsCoinBase performs a simple benchmark against the IsCoinBase

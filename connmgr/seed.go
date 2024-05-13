@@ -11,8 +11,8 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/zcoinofficial/xzcd/chaincfg"
-	"github.com/zcoinofficial/xzcd/wire"
+	"github.com/seopub/xzcd/chaincfg"
+	"github.com/seopub/xzcd/wire"
 )
 
 const (

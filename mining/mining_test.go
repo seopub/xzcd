@@ -9,7 +9,7 @@ import (
 	"math/rand"
 	"testing"
 
-	xzcutil "github.com/zcoinofficial/xzcutil"
+	xzcutil "github.com/seopub/xzcutil"
 )
 
 // TestTxFeePrioHeap ensures the priority queue for transaction fees and

@@ -7,13 +7,13 @@ package main
 import (
 	"sync/atomic"
 
-	"github.com/zcoinofficial/xzcd/blockchain"
-	"github.com/zcoinofficial/xzcd/chaincfg/chainhash"
-	"github.com/zcoinofficial/xzcd/mempool"
-	"github.com/zcoinofficial/xzcd/netsync"
-	"github.com/zcoinofficial/xzcd/peer"
-	"github.com/zcoinofficial/xzcd/wire"
-	xzcutil "github.com/zcoinofficial/xzcutil"
+	"github.com/seopub/xzcd/blockchain"
+	"github.com/seopub/xzcd/chaincfg/chainhash"
+	"github.com/seopub/xzcd/mempool"
+	"github.com/seopub/xzcd/netsync"
+	"github.com/seopub/xzcd/peer"
+	"github.com/seopub/xzcd/wire"
+	xzcutil "github.com/seopub/xzcutil"
 )
 
 // rpcPeer provides a peer for use with the RPC server and implements the

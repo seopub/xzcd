@@ -5,8 +5,8 @@
 package blockchain
 
 import (
-	"github.com/zcoinofficial/xzcd/btcec"
-	"github.com/zcoinofficial/xzcd/txscript"
+	"github.com/seopub/xzcd/btcec"
+	"github.com/seopub/xzcd/txscript"
 )
 
 // -----------------------------------------------------------------------------

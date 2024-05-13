@@ -8,9 +8,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/zcoinofficial/xzcd/chaincfg/chainhash"
-	"github.com/zcoinofficial/xzcd/database"
-	xzcutil "github.com/zcoinofficial/xzcutil"
+	"github.com/seopub/xzcd/chaincfg/chainhash"
+	"github.com/seopub/xzcd/database"
+	xzcutil "github.com/seopub/xzcutil"
 )
 
 // BehaviorFlags is a bitmask defining tweaks to the normal behavior when
