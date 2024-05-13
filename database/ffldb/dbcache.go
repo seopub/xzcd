@@ -10,9 +10,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/btcsuite/goleveldb/leveldb"
-	"github.com/btcsuite/goleveldb/leveldb/iterator"
-	"github.com/btcsuite/goleveldb/leveldb/util"
+	"github.com/seopub/btcsuite_goleveldb/leveldb"
+	"github.com/seopub/btcsuite_goleveldb/leveldb/iterator"
+	"github.com/seopub/btcsuite_goleveldb/leveldb/util"
 	"github.com/seopub/xzcd/database/internal/treap"
 )
 

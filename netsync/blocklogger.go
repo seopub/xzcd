@@ -8,7 +8,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/btcsuite/btclog"
+	"github.com/seopub/btcsuite_btclog"
 	xzcutil "github.com/btcsuite/xzcutil"
 )
 

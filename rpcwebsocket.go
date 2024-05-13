@@ -22,7 +22,7 @@ import (
 
 	"golang.org/x/crypto/ripemd160"
 
-	"github.com/btcsuite/websocket"
+	"github.com/seopub/btcsuite_websocket"
 	"github.com/seopub/xzcd/blockchain"
 	"github.com/seopub/xzcd/btcjson"
 	"github.com/seopub/xzcd/chaincfg"

@@ -9,7 +9,7 @@ import (
 	"path/filepath"
 	"runtime"
 
-	"github.com/btcsuite/btclog"
+	"github.com/seopub/btcsuite_btclog"
 	"github.com/seopub/xzcd/blockchain"
 	"github.com/seopub/xzcd/blockchain/indexers"
 	"github.com/seopub/xzcd/database"

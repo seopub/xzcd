@@ -9,7 +9,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/btcsuite/btclog"
+	"github.com/seopub/btcsuite_btclog"
 	"github.com/seopub/xzcd/chaincfg/chainhash"
 	"github.com/seopub/xzcd/txscript"
 	"github.com/seopub/xzcd/wire"

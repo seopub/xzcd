@@ -27,7 +27,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/btcsuite/websocket"
+	"github.com/seopub/btcsuite_websocket"
 	"github.com/seopub/xzcd/blockchain"
 	"github.com/seopub/xzcd/blockchain/indexers"
 	"github.com/seopub/xzcd/btcec"
