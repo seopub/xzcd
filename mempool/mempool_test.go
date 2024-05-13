@@ -12,7 +12,7 @@ import (
 	"testing"
 	"time"
 
-	xzcutil "github.com/btcsuite/xzcutil"
+	xzcutil "github.com/seopub/xzcutil"
 	"github.com/seopub/xzcd/blockchain"
 	"github.com/seopub/xzcd/btcec"
 	"github.com/seopub/xzcd/chaincfg"
