@@ -11,7 +11,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/seopub/xzcd/chaincfg/chainhash"
+	"github.com/seopub/xzcd"
 	"github.com/seopub/xzcd/wire"
 )
 
