@@ -9,7 +9,7 @@ import (
 	"fmt"
 	"math"
 
-	"github.com/seopub/xzcd/chaincfg/chainhash"
+	"github.com/seopub/xzcd"
 	"github.com/seopub/xzcd/txscript"
 	xzcutil "github.com/seopub/xzcutil"
 )
