@@ -11,7 +11,7 @@ import (
 	"encoding/json"
 
 	"github.com/seopub/xzcd/btcjson"
-	"github.com/seopub/xzcd/chaincfg/chainhash"
+	"github.com/seopub/xzcd"
 	"github.com/seopub/xzcd/wire"
 )
 
